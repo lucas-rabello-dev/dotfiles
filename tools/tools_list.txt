@@ -1,0 +1,14 @@
+nasm
+ld
+gcc
+g++
+go
+gopls
+clangd
+make
+cmake
+rustp
+mdbook
+cargo
+asm-lsp
+fastfetch
