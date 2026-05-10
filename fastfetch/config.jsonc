@@ -1,128 +1,56 @@
 {
+    "$schema": "",
     "logo": {
-        "source": "~/.config/fastfetch/logo/logo.png",
-        "height":15,
-        "width": 35
+        "source": "fedora_small",
+        "padding": {
+	        "top": 1
+	},
     },
-  "modules": [
-    "break",
-    {
-        "type": "custom",
-        "format": "\u001b[36m┌──────────────────────────── OS ──────────────────────────────┐" 
+    "display": {
+        "separator": "  "
     },
-    "break",
-    {
-        "type": "os",
-        "key": "  os",
-        "format": "{name} {version-id} {arch}",
-        "keyColor": "magenta",
-        "outputColor": "white"
-    },
-    {
-        "type": "kernel",
-        "key": "  kernel",
-        "format": "{sysname} {release} {arch}",
-        "keyColor": "magenta",
-        "outputColor": "white"
-    },
-    {
-        "type": "uptime",
-        "key": "  uptime",
-        "format": "{hours} hours, {minutes} minutes",
-        "keyColor": "magenta",
-        "outputColor": "white"
-    },
-    {
-        "type": "packages",
-        "key": "  packages",
-        "format": "{all} (all), {rpm} (rpm), {flatpak-system} (flatpak)",
-        "keyColor": "magenta",
-        "outputColor": "white"
-    },
-    {
-        "type": "shell",
-        "key": "  shell",
-        "format": "{1} {version}",
-        "keyColor": "magenta",
-        "outputColor": "white"
-    },
-    "break",
-    {
-        "type": "custom",
-        "format": "\u001b[36m├─────────────────────────── WM / UI ──────────────────────────┤"
-    },
-    {
-        "type": "display",
-        "key": "  display",
-        "format": "({name}) {width}x{height} {refresh-rate}Hz",
-        "keyColor": "blue",
-        "outputColor": "white"
-    },
-    {
-        "type": "de",
-        "key": "  de",
-        "format": "{2} {version}",
-        "keyColor": "blue",
-        "outputColor": "white"
-    },
-    {
-        "type": "wm",
-        "key": "  wm",
-        "format": "{2} {3} {version}",
-        "keyColor": "blue",
-        "outputColor": "white"
-    },
-    {
-        "type": "wmtheme",
-        "key": "  wmtheme",
-        "format": "{1}",
-        "keyColor": "blue",
-        "outputColor": "white"
-    },
-    {
-        "type": "terminal",
-        "key": "  terminal",
-        "format": "{1} {version}",
-        "keyColor": "blue",
-        "outputColor": "white"
-    },
-    "break",
-    {
-        "type": "custom",
-        "format": "\u001b[36m├─────────────────────────── Hardware ─────────────────────────┤"
-    },
-    {
-        "type": "cpu",
-        "key": "  cpu",
-        "format": "{1}, {3} Cores @ {freq-max}",
-        "keyColor": "green",
-        "outputColor": "white"
-    },
-    {
-        "type": "gpu",
-        "key": "  gpu",
-        "format": "{name} {type}",
-        "keyColor": "green",
-        "outputColor": "white"
-    },
-    {
-        "type": "memory",
-        "key": "  memory",
-        "format": "{used} / {total} ({percentage})",
-        "keyColor": "green",
-        "outputColor": "white"
-    },
-    {
-        "type": "disk",
-        "key": "  disk",
-        "format": "({mountpoint}) {size-used}/{size-total} ({size-percentage}) - {filesystem}",
-        "keyColor": "green",
-        "outputColor": "white"
-    },
-    "break",
-    {
-        "type": "custom",
-        "format": "\u001b[36m└──────────────────────────────────────────────────────────────┘"
-    }
-  ]
+    "modules": [
+	"break",
+    "title",
+    "separator",
+        {
+            "type": "os",
+            "key": "os    ",
+            "keyColor": "33",  // = color3
+        },
+        {
+            "type": "kernel",
+            "key": "kernel",
+            "keyColor": "33",
+        },
+        {
+            "type": "wm",
+            "format": "{2} {3}",
+            "key": "wm    ",
+            "keyColor": "33",
+        },
+        {
+            "type": "packages",
+            "format": "{all} (all), {rpm} (rpm), {flatpak-system} (flatpak)",
+            "key": "pkgs  ",
+            "keyColor": "33",  
+        },
+        {
+            "type": "uptime",
+            "format": "{2}h {3}m",
+            "key": "uptime",
+            "keyColor": "33",
+        },
+        {
+            "type": "memory",
+            "key": "memory",
+            "keyColor": "33",
+        },
+        {
+            "type": "shell",
+            "key": "shell",
+            "keyColor": "33",
+        },
+        "break",
+    ]
 }

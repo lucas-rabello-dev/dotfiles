@@ -14,5 +14,4 @@ if [ -f "$DIR/config.jsonc" ]; then
     mv "$DIR/config.jsonc" "$DIR/config_old.jsonc"
 fi
 
-cp -r logo/ "$DIR/"
 cp ./config.jsonc "$DIR/"
