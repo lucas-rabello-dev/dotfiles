@@ -25,20 +25,10 @@ set wildignore=*.docx,*.jpg,*.png,*.gif,*.pdf,*.pyc,*.exe,*.flv,*.img,*.xlsx
 call plug#begin('~/.vim/plugged')
 
 Plug 'preservim/nerdtree'
-Plug 'neoclide/coc.nvim', {'branch':'release'}
-let g:coc_global_extensions = ['coc-clangd', 'coc-go', 'coc-java', 'coc-rust-analyzer', 'coc-html', 'coc-css', 'coc-tsserver', 'coc-sh']
-
-Plug 'SirVer/ultisnips'
-Plug 'honza/vim-snippets'
-let g:SuperTabDefaultCompletionType = '<C-n>'
-let g:UltiSnipsExpandTrigger = "<tab>"
-let g:UltiSnipsJumpForwardTrigger = "<tab>"
-let g:UltiSnipsJumpBackwardTrigger = "<s-tab>"
 
 Plug 'jiangmiao/auto-pairs'
 
 call plug#end()
-
 
 " status bar
 set noshowmode
@@ -72,9 +62,9 @@ set laststatus=2
 colorscheme industry
 
 " keymaps
-nmap q :q<CR>
-nmap w :w<CR>
-nmap <C-q> :q!<CR>
+" nmap q :q<CR>
+" nmap w :w<CR>
+" nmap <C-q> :q!<CR>
 nnoremap <C-t> :terminal<CR>
 nnoremap <C-b> :NERDTreeToggle<CR>
 
