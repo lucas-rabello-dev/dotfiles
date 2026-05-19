@@ -7,10 +7,6 @@
 
 ### how to install
 
-Clone the repo:
-
-`git clone https://github.com/lucas-rabello-dev/vim-config.git && cd vim-config`
-
 Install the pluggin manager (vim-plug) and copy my snippets files
 
 `chmod +x ./install.sh && ./install.sh` 
