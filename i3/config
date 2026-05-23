@@ -198,14 +198,27 @@ mode "resize" {
 #}
 
 bar {
-    status_command i3blocks -c ~/.config/i3blocks/config
+    status_command i3blocks
 }
 
+# -c ~/.config/i3blocks/config
 
 # modified by t3cl4do =============
 exec nitrogen --restore
 # usando o rofi para ver os apps
 bindsym $mod+r exec rofi -show drun
 bindsym $mod+l exec i3lock
-bindsym $mod+Shift+s exec scrot -s -e 'mv $f ~/Imagens'
+bindsym $mod+Shift+s exec scrot -s -e 'mv "$f" ~/Images/' --format png
+
+# images viewer (nsxiv)
+bindsym $mod+Shift+x exec nsxiv -t ~/Images
 # =================================
+
+# to execute the pipewire
+exec --no-startup-id pipewire
+
+# icons in bar
+#wifi
+exec --no-startup-id nm-tray
+#vol
+exec --no-startup-id volctl
