@@ -34,6 +34,8 @@ Plug 'prabirshrestha/asyncomplete.vim'
 
 Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
+Plug 'prabirshrestha/asyncomplete-buffer.vim'
+
 call plug#end()
 
 " status bar
@@ -139,3 +141,6 @@ function! s:check_back_space() abort
     let col = col('.') - 1
     return !col || getline('.')[col - 1]  =~ '\s'
 endfunction
+
+" for autocomplete buffer
+let g:asyncomplete_auto_popup = 1
