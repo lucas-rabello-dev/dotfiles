@@ -17,3 +17,5 @@ export PATH="$PATH:$HOME/go/bin"
 
 PROMPT_DIRTRIM=3
 PS1="\[\e[0m\]\u\[\e[0m\] \[\e[1;31m\]||\[\e[0m\] \[\e[1;32m\]\w\[\e[0m\] \[\e[1;34m\]$\[\e[0m\] "
+
+f

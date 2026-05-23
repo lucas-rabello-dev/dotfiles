@@ -1,7 +1,7 @@
 {
     "$schema": "",
     "logo": {
-        "source": "fedora_small",
+        "source": "void2_small",
         "padding": {
 	        "top": 1
 	},
@@ -15,7 +15,7 @@
     "separator",
         {
             "type": "os",
-            "key": "os    ",
+            "key": "os:   ",
             "keyColor": "33",  // = color3
         },
         {
@@ -31,7 +31,7 @@
         },
         {
             "type": "packages",
-            "format": "{all} (all), {rpm} (rpm), {flatpak-system} (flatpak)",
+            "format": "{all} (all), {xbps} (xbps), {flatpak-system} (flatpak)",
             "key": "pkgs  ",
             "keyColor": "33",  
         },
@@ -48,7 +48,7 @@
         },
         {
             "type": "shell",
-            "key": "shell",
+            "key": "shell ",
             "keyColor": "33",
         },
         "break",
