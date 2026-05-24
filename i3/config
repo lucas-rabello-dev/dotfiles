@@ -212,6 +212,7 @@ bindsym $mod+Shift+s exec scrot -s -e 'mv "$f" ~/Images/' --format png
 
 # images viewer (nsxiv)
 bindsym $mod+Shift+x exec nsxiv -t ~/Images
+bindsym $mod+Shift+d exec dolphin
 # =================================
 
 # to execute the pipewire
