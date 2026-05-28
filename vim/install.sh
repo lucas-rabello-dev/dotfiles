@@ -10,4 +10,5 @@ if [ -e "$HOME/.vimrc" ]; then
 else
     cp "./.vimrc" "$HOME/"
 fi
+mkdir -p ~/.vim/configs/
 cp ./configs -r ~/.vim/
