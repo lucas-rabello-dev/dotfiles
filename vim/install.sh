@@ -10,4 +10,4 @@ if [ -e "$HOME/.vimrc" ]; then
 else
     cp "./.vimrc" "$HOME/"
 fi
-
+cp ./configs -r ~/.vim/
